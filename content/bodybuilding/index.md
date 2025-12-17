@@ -77,7 +77,6 @@ I currently do a **Push/Legs/Pull/Upper/Lower** routine that was made by my boyf
 | Incline Dumbell Y-Raise | 4 | 0 | 8-15 |
 | Unilateral Preacher Curl | 3 | 1 | 8-15 |
 
-
 ### Upper Day
 
 | Exercise | Sets | RIR | Rep Range |
