@@ -1,6 +1,7 @@
 +++
 date = '2025-12-15T17:59:45+01:00'
 title = 'Programming'
+layout = 'single'
 
 showEdit = false
 showDate = false

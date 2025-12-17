@@ -30,9 +30,9 @@ I'm a silly little femboy-programmer-lifter or something like that :3. One day I
 ## My Hobbies
 
 
-**💻 Programming** - That's my creative thingy I guess. I like exploring different technologies and stuffs and building projects. [More about programming](programming)
+**💻 Programming** - That's my creative thingy I guess. I like exploring different technologies and stuffs and building projects. [More about programming](/programming)
 
-**💪 Bodybuilding** - Apparently I also need to do physical activities to stay healthy so I regularly pick up heavy weights and put them back down. Sadly this not only makes me stronger but also gives me this unsightly muscle. Now I'm stuck between not being big enough and not being twinkish enough. [More about bodybuilding](bodybuilding)
+**💪 Bodybuilding** - Apparently I also need to do physical activities to stay healthy so I regularly pick up heavy weights and put them back down. Sadly this not only makes me stronger but also gives me this unsightly muscle. Now I'm stuck between not being big enough and not being twinkish enough. [More about bodybuilding](/bodybuilding)
 
 ## Life Besides That
 
