@@ -1,7 +1,6 @@
 +++
 date = '2025-12-15T17:59:45+01:00'
 title = 'Bodybuilding'
-draft = true
 
 
 showEdit = false
@@ -18,181 +17,137 @@ showAuthor = false
 showComments = false
 +++
 
-![Gym Banner](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=400&fit=crop)
+![Gym Banner](/img/gym/front.jpg)
 
 ## Why I Lift
 
-Bodybuilding is where I learned discipline, patience, and the power of consistency. It's not just about building muscle—it's about building character. Every rep, every set, every workout is a commitment to becoming better than yesterday.
+I one day randomly stumbled upon fitness YouTube and binge watched the entire Will Tennyson Channel. That motivated me to start doing some calisthenics and after a little over a year or so of that I started going to the gym.
 
-The gym is my second home, a place where I can push my limits and see tangible results from hard work.
+My original plan was to become the strongest femboy in the whole wide world but now I just do it because it's fun.
 
 ## My Training Philosophy
 
-### Consistency Over Intensity
+### Science-Based
 
-The best workout is the one you actually do. I'd rather train consistently at 80% than burn out chasing 100% every session. Progressive overload happens over months and years, not days.
+For most of my lifting journey I wasn't a fan of science based stuff but those lil charts really are cool so I guess I kinda do that idk.
 
-### Mind-Muscle Connection
+### Harder Than Last Time
 
-I focus on feeling every rep, not just moving weight. Quality contractions and proper form trump ego-lifting every time.
+As a Greg Doucette Fan I obviously have to train harder than last time, even though silly people keep telling me that that's not even possible BUT IT IS!!!! IT IS PERSONAL!!!! (Salamonki reference) grrrrr.
 
-### Balance and Recovery
+### Balance
 
-Growth happens outside the gym. I prioritize sleep, nutrition, and recovery as much as my training sessions.
+Also it's very important not to be too obsessed with training because there's only so much you can do. So I just do my daily workout and ideally don't think about the gym for the rest of the day.
 
-![Training Hard](https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&h=500&fit=crop)
+![Training Hard](/img/gym/back.jpg)
 
 ## Training Split
 
-I follow a **Push/Pull/Legs** routine that I've refined over time:
+I currently do a **Push/Legs/Pull/Upper/Lower** routine that was made by my boyfriend (thanks babe):
 
-### Push Day (Chest, Shoulders, Triceps)
-- Bench Press variations
-- Overhead Press
-- Dips and cable work
-- Isolation movements for detail
 
-### Pull Day (Back, Biceps)
-- Deadlift variations
-- Pull-ups and rows
-- Bicep curls and hammer curls
-- Rear delt work
+### Push Day + Biceps
 
-### Leg Day (Quads, Hamstrings, Calves)
-- Squats (the king of exercises)
-- Romanian Deadlifts
-- Leg press and extensions
-- Calf raises
+| Exercise | Sets | RIR | Rep Range |
+|----------|------|-----|-----------|
+| Unilateral Preacher Curl | 4 | 1 | 8-15 |
+| Bench Press | 3 | 2 | 5-10 |
+| Chest Fly | 3 | 1 | 10-15 |
+| Incline Dumbell Y-Raise | 4 | 0 | 8-15 |
+| Single Arm Reverse Fly | 3 | 0 | 8-15 |
 
-I typically run this twice per week with active recovery days in between.
+### Leg Day
 
-![Squat Rack](https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&h=500&fit=crop)
+| Exercise | Sets | RIR | Rep Range |
+|----------|------|-----|-----------|
+| Calf Press | 4 | 0 | 10-20 |
+| Seated Leg Curl | 3 | 1 | 8-15 |
+| Squat | 3 | 2 | 5-8 |
+| Leg Extension | 3 | 1 | 10-15 |
+| Hip Thrust | 2 | 2 | 10-15 |
 
-## Nutrition Approach
+### Pull Day + Tricpes & delts
 
-### Macros Matter
+| Exercise | Sets | RIR | Rep Range |
+|----------|------|-----|-----------|
+| Overhead Triceps Extension | 3 | 1 | 8-15 |
+| Chest Supported Row | 4 | 1 | 8-15 |
+| Lat Pulldown | 3 | 1 | 8-12 |
+| Hyperextension | 3 | 1 | 10-20 |
+| Incline Dumbell Y-Raise | 4 | 0 | 8-15 |
+| Unilateral Preacher Curl | 3 | 1 | 8-15 |
 
-I track my protein, carbs, and fats to ensure I'm fueling my body properly. Protein is king for muscle growth—I aim for about 0.8-1g per pound of bodyweight.
+
+### Upper Day
+
+| Exercise | Sets | RIR | Rep Range |
+|----------|------|-----|-----------|
+| Incline Dumbell Y-Raise | 4 | 0 | 8-15 |
+| Incline Smith Machine Bench Press | 3 | 1 | 6-12 |
+| Neutral Grip Pull-up | 3 | 1 | 6-15 |
+| Chest Supported Row | 3 | 1 | 8-15 |
+| Chest Fly | 2 | 1 | 10-15 |
+| Hanging Leg Raise | 4 | 0 | 10-20 |
+| Overhead Triceps Extension | 3 | 1 | 8-15 |
+| Cable Biceps Curl | 3 | 1 | 6-12|
+
+### Lower Day
+
+| Exercise | Sets | RIR | Rep Range |
+|----------|------|-----|-----------|
+| Romanian Deadlift | 3 | 1 | 6-12 |
+| Tempo Squat | 3 | 2 | 3-5 |
+| Hyperextension | 3 | 1 | 10-20 |
+| Calf Press | 4 | 0 | 10-20 |
+| Hip Thrust | 3 | 2 | 10-15 |
+| Hip Adduction | 3 | 0 | 8-12 |
+
+After each Pull- and Lower Day is a rest day.
+
+## Nutrition
 
 ### Flexible Dieting
 
-I don't believe in "clean" vs "dirty" foods. I eat what fits my macros while prioritizing whole, nutrient-dense foods 80-90% of the time. Life's too short to never enjoy a good meal.
+I believe in eating whatever you want, because like... does it really matter? I want yummy food.
 
 ### Pre and Post Workout
 
-- **Pre-workout**: Complex carbs and moderate protein for sustained energy
-- **Post-workout**: Fast-digesting protein and carbs to kickstart recovery
+- **Pre-workout**: 300mg caffeine
+- **Post-workout**: Whatever mom made ^^
 
 ### Supplements I Use
 
-- Whey protein for convenience
-- Creatine monohydrate (tried and true)
-- Multivitamin for insurance
-- Caffeine when needed
+- **Whey protein** - Only Sometimes tho, I'm too lazy mostly
+- **Creatine monohydrate** - Probably doesn't do much but whatever
+- **Magnesium** - For eepy time
+- **Ashwagandha** - Sounds cool
+- **Vitamin D** - Would prefer another D but I'm not picky
+- **Multivitamin** - Health
+- **Caffeine** - Not Health
 
-![Healthy Meal](https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=500&fit=crop)
+![Healthy Meal](/img/gym/food.jpg)
 
 ## Favorite Exercises
 
-**Deadlifts** - The ultimate full-body builder. Nothing feels quite like a heavy deadlift.
+Exercises aren't to be liked or disliked... <- Frieren Reference
 
-**Weighted Pull-ups** - Best back builder in my opinion.
-
-**Incline Dumbbell Press** - Perfect for upper chest development.
-
-**Bulgarian Split Squats** - Brutal but effective for legs.
-
-**Face Pulls** - Underrated for shoulder health and rear delts.
-
-## My current workout split ^^
-
-### Push Day (Chest, Shoulders, Triceps)
-
-| Exercise | Sets | RIR | Rep Range |
-|----------|------|-----|-----------|
-| Barbell Bench Press | 4 | 1-2 | 6-8 |
-| Incline Dumbbell Press | 3 | 2-3 | 8-10 |
-| Overhead Press | 4 | 1-2 | 6-8 |
-| Lateral Raises | 3 | 2-3 | 12-15 |
-| Cable Flyes | 3 | 2-3 | 10-12 |
-| Tricep Pushdowns | 3 | 2-3 | 10-12 |
-| Overhead Tricep Extension | 3 | 2-3 | 12-15 |
-
-### Pull Day (Back, Biceps)
-
-| Exercise | Sets | RIR | Rep Range |
-|----------|------|-----|-----------|
-| Conventional Deadlift | 3 | 1-2 | 5-6 |
-| Weighted Pull-ups | 4 | 1-2 | 6-8 |
-| Barbell Rows | 4 | 2-3 | 8-10 |
-| Lat Pulldowns | 3 | 2-3 | 10-12 |
-| Face Pulls | 3 | 2-3 | 15-20 |
-| Barbell Curls | 3 | 2-3 | 8-10 |
-| Hammer Curls | 3 | 2-3 | 10-12 |
-
-### Leg Day (Quads, Hamstrings, Glutes, Calves)
-
-| Exercise | Sets | RIR | Rep Range |
-|----------|------|-----|-----------|
-| Back Squats | 4 | 1-2 | 6-8 |
-| Romanian Deadlifts | 4 | 2-3 | 8-10 |
-| Leg Press | 3 | 2-3 | 10-12 |
-| Bulgarian Split Squats | 3 | 2-3 | 8-10 per leg |
-| Leg Curls | 3 | 2-3 | 12-15 |
-| Leg Extensions | 3 | 2-3 | 12-15 |
-| Standing Calf Raises | 4 | 2-3 | 12-15 |
-| Seated Calf Raises | 3 | 2-3 | 15-20 |
-
-
-## The Mental Game
-
-### Discipline Beats Motivation
-
-Motivation comes and goes. Discipline is what gets me to the gym on days when I don't feel like it. That's when real progress happens.
-
-### Progress Takes Time
-
-Building muscle is a marathon, not a sprint. I measure progress in months and years, not days or weeks. Trust the process.
-
-### Embrace the Grind
-
-Some days the weights feel heavy. Some workouts are a struggle. That's normal. Show up anyway.
-
-![Motivation](https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=500&fit=crop)
-
-## Lessons from the Iron
-
-Bodybuilding has taught me more than just how to build muscle:
-
-- **Patience**: Results don't come overnight
-- **Resilience**: Push through plateaus and setbacks
-- **Self-discipline**: Show up even when you don't want to
-- **Goal-setting**: Long-term vision with short-term milestones
-- **Self-awareness**: Listen to your body
-
-## Balancing Code and Iron
-
-As a programmer, I spend a lot of time sitting. Bodybuilding is the perfect counterbalance—it keeps me healthy, energized, and mentally sharp. The discipline from training carries over into my coding practice.
-
-Plus, some of my best problem-solving happens during rest periods between sets.
-
-![Gym Equipment](https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=500&fit=crop)
+Jk, deadlifts are pretty cool :3
 
 ## Current Goals
 
-- Progressive strength increases across all main lifts
-- Improving mind-muscle connection and exercise execution
-- Building a well-proportioned, aesthetic physique
-- Maintaining consistency while avoiding injury
-- Learning more about advanced training techniques
+- Benching 315
+- Squatting 315
+- Getting an aesthetic physique
 
-## Resources I Recommend
+## Biggest Inspirations
 
-- **Renaissance Periodization** - Science-based training and nutrition info
-- **Jeff Nippard** - Evidence-based approach to bodybuilding
-- **AthleanX** - Great for injury prevention and proper form
-- **Stronger by Science** - Deep dives into training methodology
+- **My Boyfriend** - He is super smart and always tells me smart things about lifting
+
+## Goated Fitness YouTubers
+
+- **Renaissance Periodization** - Funny gay jokes
+- **Will Tennyson** - I like his dog Ollie was the goat tho
+- **Greg Doucette** - Gregging my doucette harder than last time
 
 ---
 
-*"The Iron never lies to you. You can walk outside and listen to all kinds of talk, get told that you're a god or a total bastard. The Iron will always kick you the real deal."* – Henry Rollins
