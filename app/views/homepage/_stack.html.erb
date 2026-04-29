@@ -1,0 +1,23 @@
+<div class="relative">
+  <%# tape, mint %>
+  <div class="absolute h-[18px] w-[60px] -rotate-[5deg] shadow-[0_1px_3px_#0003] -top-[6px] right-[30px] bg-[repeating-linear-gradient(90deg,#7affd3aa_0_4px,#7affd355_4px_8px)]"></div>
+
+  <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 -rotate-[0.9deg] border-[2.5px] border-dashed border-[#ff2fb366]">
+    <div class="font-display text-[20px] text-hot mb-2">my stack ★</div>
+    <div class="text-[12px] leading-[1.7]">
+      <% [
+        { cat: "editor",   items: "neovim, helix" },
+        { cat: "shell",    items: "zsh, starship, zellij" },
+        { cat: "lang",     items: "rust, ts, python" },
+        { cat: "os",       items: "arch btw, hyprland" },
+        { cat: "keyboard", items: "corne v4, cherry browns" },
+        { cat: "gym",      items: "rogue bar, versa grips" }
+      ].each do |s| %>
+        <div class="flex gap-2 items-baseline">
+          <span class="font-script text-[16px] text-hot min-w-[70px]"><%= s[:cat] %>:</span>
+          <span class="flex-1"><%= s[:items] %></span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

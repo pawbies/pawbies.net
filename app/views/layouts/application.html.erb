@@ -6,6 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Pawbies Net">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="color-scheme" content="dark">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,14 +19,31 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fredoka:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Shrikhand&display=swap">
+
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="min-h-screen text-ink font-sans bg-plum-bg bg-[radial-gradient(ellipse_at_25%_15%,#4e1e5a_0%,transparent_55%),radial-gradient(ellipse_at_75%_85%,#3a2a48_0%,transparent_55%)]">
+    <nav class="sticky top-0 z-50 flex items-center gap-3 md:gap-[18px] px-4 md:px-8 py-2.5 backdrop-blur-md border-b border-dashed text-paper bg-[#1f1428cc] border-[#ff2fb355]">
+      <span class="font-display text-[22px] text-hot leading-none">pawbies<span class="text-lilac">.net</span></span>
+      <span class="flex-1"></span>
+      <% %w[about blog projects gym photos guests links].each do |n| %>
+        <a href="#<%= n %>" class="hidden md:inline-block text-paper text-[13px] font-script font-semibold px-2.5 py-1 rounded-full transition hover:bg-hot/30"><%= n %></a>
+      <% end %>
+    </nav>
+
+    <main>
       <%= yield %>
     </main>
+
+    <footer class="text-center mt-[50px] pb-[60px] font-script text-petal text-[22px] leading-[1.4]">
+      made with ♡ &amp; protein by pb · 2026<br>
+      <span class="text-[13px] font-mono text-[#a888b8]">thanks for stopping by ✿</span>
+    </footer>
   </body>
 </html>

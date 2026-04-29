@@ -1,0 +1,31 @@
+<div class="relative">
+  <%# tape, gold %>
+  <div class="absolute h-[18px] w-[50px] rotate-[12deg] shadow-[0_1px_3px_#0003] -top-[6px] left-[40px] bg-[repeating-linear-gradient(90deg,#ffce6baa_0_4px,#ffce6b55_4px_8px)]"></div>
+
+  <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 -rotate-[1.8deg]">
+    <div class="flex gap-3 items-start">
+      <%# vinyl record %>
+      <div class="w-16 h-16 rounded-full flex items-center justify-center animate-spin-slow shrink-0 bg-[conic-gradient(#ff2fb3,#d9a7ff,#7affd3,#ffce6b,#ff2fb3)] border-[2.5px] border-plum-deep">
+        <div class="rounded-full w-[18px] h-[18px] bg-plum-deep border-[2.5px] border-paper"></div>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="font-script text-[18px] text-hot leading-none">now spinning ♪</div>
+        <div class="text-[14px] font-bold mt-0.5">#menow</div>
+        <div class="text-[12px] text-[#2a1535aa]">fromis_9</div>
+      </div>
+    </div>
+    <div class="mt-2.5 font-mono text-[11.5px] leading-[1.6] text-[#2a1535bb]">
+      <% [
+        { artist: "yorushika",       title: "茜色に染まる",       note: "writing" },
+        { artist: "aespa",           title: "Whiplash",          note: "deadlift day" },
+        { artist: "Porter Robinson", title: "Cheerleader",       note: "walks" }
+      ].each do |t| %>
+        <div class="flex gap-1.5">
+          <span class="text-hot">♪</span>
+          <span class="flex-1 truncate"><%= t[:artist] %> — <%= t[:title] %></span>
+          <span class="italic text-[#2a1535aa]"><%= t[:note] %></span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

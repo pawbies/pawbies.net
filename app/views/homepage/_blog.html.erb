@@ -1,0 +1,25 @@
+<div id="blog" class="relative">
+  <%# tape, petal pink %>
+  <div class="absolute h-[18px] w-[90px] rotate-[6deg] shadow-[0_1px_3px_#0003] -top-[8px] right-[30px] bg-[repeating-linear-gradient(90deg,#ff94d4aa_0_4px,#ff94d455_4px_8px)]"></div>
+
+  <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 rotate-[1.5deg]">
+    <div class="font-display text-[26px] text-hot mb-2.5">blog ✎</div>
+    <% posts = [
+      { date: "2026-04-18", title: "rewriting my blog in htmx (again)", tag: "dev",   read: "4 min" },
+      { date: "2026-04-09", title: "push day PR: 2.2x bw bench",        tag: "gym",   read: "2 min" },
+      { date: "2026-03-28", title: "on being cute AND legible",         tag: "essay", read: "7 min" },
+      { date: "2026-03-14", title: "vim keybinds i can't live without", tag: "dev",   read: "5 min" },
+      { date: "2026-02-22", title: "frieren s2 notes (no spoilers)",    tag: "anime", read: "3 min" }
+    ] %>
+    <% posts.each_with_index do |p, i| %>
+      <div class="py-2 <%= 'border-b-[1.5px] border-dashed border-[#ff2fb355]' if i < posts.length - 1 %>">
+        <div class="text-[13.5px] font-semibold text-ink leading-[1.3]"><%= p[:title] %></div>
+        <div class="flex justify-between mt-0.5 items-baseline">
+          <span class="font-script text-[15px] text-hot">#<%= p[:tag] %></span>
+          <span class="font-mono text-[10.5px] text-[#2a1535aa]"><%= p[:date] %> · <%= p[:read] %></span>
+        </div>
+      </div>
+    <% end %>
+    <a href="#" class="block text-right mt-1.5 text-hot font-script text-[16px] no-underline">more posts →</a>
+  </div>
+</div>

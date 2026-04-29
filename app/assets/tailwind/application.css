@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@source inline("top-[{8,12,18,28,35,50,55,62,70,75,85,90}%]");
+@source inline("left-[{6,8,18,22,30,45,50,60,75,80,88,92}%]");
+@source inline("[--rot:{-20,-15,-12,-10,-5,0,5,10,15,18,25,30}deg]");
+@source inline("[animation-duration:{3.5,3.6,3.8,4.0,4.2,4.4,4.5,5.0,5.5}s]");
+@source inline("[animation-delay:{0.0,0.2,0.3,0.4,0.5,0.6,0.8,1.0,1.2,1.4,1.5,1.8}s]");
+
+@theme {
+  --color-ink: #2a1535;
+  --color-paper: #fff3f9;
+  --color-hot: #ff2fb3;
+  --color-petal: #ff94d4;
+  --color-lilac: #d9a7ff;
+  --color-mint: #7affd3;
+  --color-gold: #ffce6b;
+  --color-plum-bg: #1f1428;
+  --color-plum-deep: #1a0822;
+
+  --font-display: "Shrikhand", "Georgia", serif;
+  --font-script: "Caveat", "Comic Sans MS", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "Fredoka", system-ui, sans-serif;
+
+  --animate-floaty: floaty 4s ease-in-out infinite;
+  --animate-wobble: wobble 4s ease-in-out infinite;
+  --animate-twinkle: twinkle 2s ease-in-out infinite;
+  --animate-spin-slow: spin 5s linear infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-6px) rotate(var(--rot, 0deg)); }
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
