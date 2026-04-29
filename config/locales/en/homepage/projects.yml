@@ -1,0 +1,16 @@
+en:
+  homepage:
+    projects:
+      projects: "projects ✿"
+
+      femmed:
+        description: "Your medication tracking system made by femboys for femboys"
+        language: "Ruby"
+
+      otterdo:
+        description: "Tasks that flow like a river."
+        language: "Ruby"
+
+      pawbiesnet:
+        description: "My personal homepage"
+        language: "Ruby"

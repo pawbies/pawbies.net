@@ -1,49 +1,46 @@
 <% content_for :title, "pawbies.net" %>
 
-<%# notebook grid overlay %>
-<div class="fixed inset-0 pointer-events-none z-0 bg-[linear-gradient(#ff2fb311_1px,transparent_1px),linear-gradient(90deg,#ff2fb311_1px,transparent_1px)] bg-[length:28px_28px]"></div>
-
-  <%# ambient floaty doodles %>
-  <div class="fixed inset-0 pointer-events-none z-0">
-    <% [
-      { type: "star",    size: 24, top: 12, left: 6,  rot: 15,  dur: 4.0, delay: 0.0, color: "#ff2fb3" },
-      { type: "heart",   size: 28, top: 8,  left: 88, rot: -10, dur: 5.0, delay: 0.5, color: "#d9a7ff" },
-      { type: "flower",  size: 32, top: 28, left: 22, rot: 5,   dur: 4.5, delay: 1.0, color: "#7affd3" },
-      { type: "sparkle", size: 22, top: 35, left: 75, rot: 25,  dur: 3.5, delay: 1.5, color: "#ffce6b" },
-      { type: "swirl",   size: 30, top: 50, left: 8,  rot: -20, dur: 4.0, delay: 0.3, color: "#ff94d4" },
-      { type: "bow",     size: 26, top: 55, left: 92, rot: -5,  dur: 5.0, delay: 0.8, color: "#ff2fb3" },
-      { type: "arrow",   size: 28, top: 70, left: 18, rot: 30,  dur: 4.5, delay: 1.2, color: "#d9a7ff" },
-      { type: "star",    size: 22, top: 75, left: 60, rot: 0,   dur: 3.8, delay: 0.6, color: "#7affd3" },
-      { type: "heart",   size: 26, top: 85, left: 30, rot: 10,  dur: 4.2, delay: 1.4, color: "#ff2fb3" },
-      { type: "sparkle", size: 20, top: 90, left: 80, rot: -15, dur: 3.6, delay: 0.2, color: "#ffce6b" },
-      { type: "flower",  size: 24, top: 18, left: 45, rot: 18,  dur: 5.5, delay: 1.8, color: "#ff94d4" },
-      { type: "swirl",   size: 26, top: 62, left: 50, rot: -12, dur: 4.4, delay: 0.4, color: "#ffce6b" }
-    ].each do |d| %>
-      <svg viewBox="0 0 24 24" width="<%= d[:size] %>" height="<%= d[:size] %>" class="absolute opacity-45 animate-floaty top-[<%= d[:top] %>%] left-[<%= d[:left] %>%] [--rot:<%= d[:rot] %>deg] [animation-duration:<%= d[:dur] %>s] [animation-delay:<%= d[:delay] %>s]">
-        <% case d[:type]
-           when "star" %>
-          <path d="M12 3 L14 10 L21 11 L15.5 15.5 L17.5 22 L12 18 L6.5 22 L8.5 15.5 L3 11 L10 10 Z" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linejoin="round"/>
-        <% when "heart" %>
-          <path d="M12 21 C 4 15, 2 10, 6 6 C 9 4, 11 6, 12 8 C 13 6, 15 4, 18 6 C 22 10, 20 15, 12 21 Z" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
-        <% when "flower" %>
-          <circle cx="12" cy="6" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
-          <circle cx="6" cy="12" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
-          <circle cx="18" cy="12" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
-          <circle cx="12" cy="18" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
-          <circle cx="12" cy="12" r="2.5" fill="<%= d[:color] %>"/>
-        <% when "swirl" %>
-          <path d="M3 12 Q 8 4, 12 12 T 21 12" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linecap="round"/>
-        <% when "sparkle" %>
-          <path d="M12 2 L13 10 L22 12 L13 14 L12 22 L11 14 L2 12 L11 10 Z" fill="<%= d[:color] %>"/>
-        <% when "bow" %>
-          <path d="M12 12 L4 7 L4 17 Z M12 12 L20 7 L20 17 Z" fill="<%= d[:color] %>"/>
-          <circle cx="12" cy="12" r="2" fill="<%= d[:color] %>"/>
-        <% when "arrow" %>
-          <path d="M3 12 Q 8 6, 14 12 Q 18 16, 21 11 M21 11 L17 11 M21 11 L21 15" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linecap="round"/>
-        <% end %>
-      </svg>
-    <% end %>
-  </div>
+<%# ambient floaty doodles %>
+<div class="fixed inset-0 pointer-events-none z-0">
+  <% [
+    { type: "star",    size: 24, top: 12, left: 6,  rot: 15,  dur: 4.0, delay: 0.0, color: "#ff2fb3" },
+    { type: "heart",   size: 28, top: 8,  left: 88, rot: -10, dur: 5.0, delay: 0.5, color: "#d9a7ff" },
+    { type: "flower",  size: 32, top: 28, left: 22, rot: 5,   dur: 4.5, delay: 1.0, color: "#7affd3" },
+    { type: "sparkle", size: 22, top: 35, left: 75, rot: 25,  dur: 3.5, delay: 1.5, color: "#ffce6b" },
+    { type: "swirl",   size: 30, top: 50, left: 8,  rot: -20, dur: 4.0, delay: 0.3, color: "#ff94d4" },
+    { type: "bow",     size: 26, top: 55, left: 92, rot: -5,  dur: 5.0, delay: 0.8, color: "#ff2fb3" },
+    { type: "arrow",   size: 28, top: 70, left: 18, rot: 30,  dur: 4.5, delay: 1.2, color: "#d9a7ff" },
+    { type: "star",    size: 22, top: 75, left: 60, rot: 0,   dur: 3.8, delay: 0.6, color: "#7affd3" },
+    { type: "heart",   size: 26, top: 85, left: 30, rot: 10,  dur: 4.2, delay: 1.4, color: "#ff2fb3" },
+    { type: "sparkle", size: 20, top: 90, left: 80, rot: -15, dur: 3.6, delay: 0.2, color: "#ffce6b" },
+    { type: "flower",  size: 24, top: 18, left: 45, rot: 18,  dur: 5.5, delay: 1.8, color: "#ff94d4" },
+    { type: "swirl",   size: 26, top: 62, left: 50, rot: -12, dur: 4.4, delay: 0.4, color: "#ffce6b" }
+  ].each do |d| %>
+    <svg viewBox="0 0 24 24" width="<%= d[:size] %>" height="<%= d[:size] %>" class="absolute opacity-45 animate-floaty top-[<%= d[:top] %>%] left-[<%= d[:left] %>%] [--rot:<%= d[:rot] %>deg] [animation-duration:<%= d[:dur] %>s] [animation-delay:<%= d[:delay] %>s]">
+      <% case d[:type]
+          when "star" %>
+        <path d="M12 3 L14 10 L21 11 L15.5 15.5 L17.5 22 L12 18 L6.5 22 L8.5 15.5 L3 11 L10 10 Z" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linejoin="round"/>
+      <% when "heart" %>
+        <path d="M12 21 C 4 15, 2 10, 6 6 C 9 4, 11 6, 12 8 C 13 6, 15 4, 18 6 C 22 10, 20 15, 12 21 Z" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
+      <% when "flower" %>
+        <circle cx="12" cy="6" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
+        <circle cx="6" cy="12" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
+        <circle cx="18" cy="12" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
+        <circle cx="12" cy="18" r="3.5" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5"/>
+        <circle cx="12" cy="12" r="2.5" fill="<%= d[:color] %>"/>
+      <% when "swirl" %>
+        <path d="M3 12 Q 8 4, 12 12 T 21 12" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linecap="round"/>
+      <% when "sparkle" %>
+        <path d="M12 2 L13 10 L22 12 L13 14 L12 22 L11 14 L2 12 L11 10 Z" fill="<%= d[:color] %>"/>
+      <% when "bow" %>
+        <path d="M12 12 L4 7 L4 17 Z M12 12 L20 7 L20 17 Z" fill="<%= d[:color] %>"/>
+        <circle cx="12" cy="12" r="2" fill="<%= d[:color] %>"/>
+      <% when "arrow" %>
+        <path d="M3 12 Q 8 6, 14 12 Q 18 16, 21 11 M21 11 L17 11 M21 11 L21 15" fill="none" stroke="<%= d[:color] %>" stroke-width="1.5" stroke-linecap="round"/>
+      <% end %>
+    </svg>
+  <% end %>
+</div>
 
 <div class="relative max-w-[1180px] mx-auto px-4 md:px-10 pt-6 md:pt-8">
   <%= render "hero" %>

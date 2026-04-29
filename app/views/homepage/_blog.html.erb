@@ -1,9 +1,9 @@
 <div id="blog" class="relative">
   <%# tape, petal pink %>
-  <div class="absolute h-[18px] w-[90px] rotate-[6deg] shadow-[0_1px_3px_#0003] -top-[8px] right-[30px] bg-[repeating-linear-gradient(90deg,#ff94d4aa_0_4px,#ff94d455_4px_8px)]"></div>
+  <div class="absolute h-[18px] w-[90px] rotate-6 shadow-[0_1px_3px_#0003] -top-2 right-[30px] bg-[repeating-linear-gradient(90deg,#ff94d4aa_0_4px,#ff94d455_4px_8px)]"></div>
 
   <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 rotate-[1.5deg]">
-    <div class="font-display text-[26px] text-hot mb-2.5">blog ✎</div>
+    <div class="font-display text-[26px] text-hot mb-2.5"><%= t(".blog") %></div>
     <% posts = [
       { date: "2026-04-18", title: "rewriting my blog in htmx (again)", tag: "dev",   read: "4 min" },
       { date: "2026-04-09", title: "push day PR: 2.2x bw bench",        tag: "gym",   read: "2 min" },

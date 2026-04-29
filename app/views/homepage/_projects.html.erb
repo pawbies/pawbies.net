@@ -1,28 +1,42 @@
 <div id="projects" class="relative mt-5">
   <%# tape, mint %>
-  <div class="absolute h-[18px] w-[60px] -rotate-[7deg] shadow-[0_1px_3px_#0003] -top-[8px] right-[40px] bg-[repeating-linear-gradient(90deg,#7affd3aa_0_4px,#7affd355_4px_8px)]"></div>
+  <div class="absolute h-[18px] w-[60px] -rotate-7 shadow-[0_1px_3px_#0003] -top-2 right-10 bg-[repeating-linear-gradient(90deg,#7affd3aa_0_4px,#7affd355_4px_8px)]"></div>
 
   <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 -rotate-[1.65deg]">
-    <div class="font-display text-[22px] text-hot mb-2">projects ✿</div>
+    <div class="font-display text-[22px] text-hot mb-2"><%= t(".projects") %></div>
 
-    <% projects = [
-      { name: "kittycal",   desc: "calorie tracker that's mean to u in a loving way", stars: 412,  lang: "typescript" },
-      { name: "dotfiles",   desc: "my neovim + hyprland + ricing setup",              stars: 1208, lang: "lua" },
-      { name: "femboy.css", desc: "a css reset but pink",                             stars: 89,   lang: "css" },
-      { name: "gymlog",     desc: "tiny local-first workout tracker",                 stars: 56,   lang: "rust" }
-    ] %>
-    <% projects.each_with_index do |pr, i| %>
-      <div class="py-2 <%= 'border-b-[1.5px] border-dashed border-[#ff2fb344]' if i < projects.length - 1 %>">
-        <div class="flex justify-between items-center">
-          <span class="font-mono text-[13px] font-bold text-hot">./<%= pr[:name] %></span>
-          <span class="inline-flex items-center gap-1 text-[11px] text-[#2a1535aa]">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
-            <%= pr[:stars] %>
-          </span>
-        </div>
-        <div class="text-[12px] text-ink leading-[1.4] mt-0.5"><%= pr[:desc] %></div>
-        <div class="text-[10.5px] text-lilac mt-1 font-mono">● <%= pr[:lang] %></div>
+    <div class="py-2 border-b-[1.5px] border-dashed border-[#ff2fb344]">
+      <div class="flex justify-between items-center">
+        <span class="font-mono text-[13px] font-bold text-hot">./femmed</span>
+        <span class="inline-flex items-center gap-1 text-[11px] text-[#2a1535aa]">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          3
+        </span>
       </div>
-    <% end %>
+      <div class="text-[12px] text-ink leading-[1.4] mt-0.5"><%= t(".femmed.description") %></div>
+      <div class="text-[10.5px] text-lilac mt-1 font-mono">● <%= t(".femmed.language") %></div>
+    </div>
+    <div class="py-2 border-b-[1.5px] border-dashed border-[#ff2fb344]">
+      <div class="flex justify-between items-center">
+        <span class="font-mono text-[13px] font-bold text-hot">./otterdo</span>
+        <span class="inline-flex items-center gap-1 text-[11px] text-[#2a1535aa]">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          1
+        </span>
+      </div>
+      <div class="text-[12px] text-ink leading-[1.4] mt-0.5"><%= t(".otterdo.description") %></div>
+      <div class="text-[10.5px] text-lilac mt-1 font-mono">● <%= t(".otterdo.language") %></div>
+    </div>
+    <div class="py-2">
+      <div class="flex justify-between items-center">
+        <span class="font-mono text-[13px] font-bold text-hot">./pawbies.net</span>
+        <span class="inline-flex items-center gap-1 text-[11px] text-[#2a1535aa]">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          1
+        </span>
+      </div>
+      <div class="text-[12px] text-ink leading-[1.4] mt-0.5"><%= t(".pawbiesnet.description") %></div>
+      <div class="text-[10.5px] text-lilac mt-1 font-mono">● <%= t(".pawbiesnet.language") %></div>
+    </div>
   </div>
 </div>

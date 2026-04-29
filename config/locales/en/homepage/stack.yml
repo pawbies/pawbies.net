@@ -1,0 +1,12 @@
+en:
+  homepage:
+    stack:
+      my_stack: "my stack ★"
+      editor: "editor"
+      editor_stack: "neovim, vsc"
+      shell: "shell"
+      shell_stack: "fish"
+      lang: "lang"
+      lang_stack: "ruby, js, c, c++"
+      os: "os"
+      os_stack: "fedora"

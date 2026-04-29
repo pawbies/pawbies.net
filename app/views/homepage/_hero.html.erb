@@ -1,42 +1,47 @@
 <div id="about" class="relative mb-10">
   <%# washi tape, hot magenta, top-left %>
-  <div class="absolute h-[18px] w-[90px] -rotate-12 shadow-[0_1px_3px_#0003] -top-[6px] left-[60px] bg-[repeating-linear-gradient(90deg,#ff2fb3aa_0_4px,#ff2fb355_4px_8px)]"></div>
+  <div class="absolute h-[18px] w-[90px] -rotate-12 shadow-[0_1px_3px_#0003] -top-1.5 left-[60px] bg-[repeating-linear-gradient(90deg,#ff2fb3aa_0_4px,#ff2fb355_4px_8px)]"></div>
   <%# washi tape, mint, top-right %>
-  <div class="absolute h-[18px] w-[70px] rotate-[10deg] shadow-[0_1px_3px_#0003] -top-[8px] right-[100px] bg-[repeating-linear-gradient(90deg,#7affd3aa_0_4px,#7affd355_4px_8px)]"></div>
+  <div class="absolute h-[18px] w-[70px] rotate-10 shadow-[0_1px_3px_#0003] -top-2 right-[100px] bg-[repeating-linear-gradient(90deg,#7affd3aa_0_4px,#7affd355_4px_8px)]"></div>
 
   <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] -rotate-1 flex flex-col md:flex-row gap-5 md:gap-6 items-center px-5 py-6 md:px-8 md:py-[26px]">
-    <%# avatar with stickers %>
     <div class="relative shrink-0">
-      <div class="w-[88px] h-[88px] md:w-[120px] md:h-[120px] rounded-full flex items-center justify-center font-mono font-bold text-[28px] md:text-[40px] tracking-widest bg-[radial-gradient(circle_at_30%_30%,#fff3f933,#ff94d4)] text-paper border-2 border-hot shadow-[0_0_0_4px_#fff3f9,0_0_0_6px_#ff2fb3,0_8px_20px_#0008]">
-        pb
+      <div class="w-[88px] h-[88px] md:w-[120px] md:h-[120px] rounded-full flex items-center justify-center font-mono font-bold text-3xl md:text-5xl tracking-widest bg-[radial-gradient(circle_at_30%_30%,#fff3f933,#ff94d4)] text-paper border-2 border-hot shadow-[0_0_0_4px_#fff3f9,0_0_0_6px_#ff2fb3,0_8px_20px_#0008]">
+        af
       </div>
-      <svg viewBox="0 0 24 24" width="28" height="28" class="absolute -top-[10px] -right-[12px] animate-twinkle">
+      <svg viewBox="0 0 24 24" width="28" height="28" class="absolute -top-2.5 -right-3 animate-twinkle">
         <path d="M12 2 L13 10 L22 12 L13 14 L12 22 L11 14 L2 12 L11 10 Z" fill="#ffce6b"/>
       </svg>
-      <svg viewBox="0 0 24 24" width="20" height="20" class="absolute -bottom-[4px] -left-[10px]">
+      <svg viewBox="0 0 24 24" width="20" height="20" class="absolute -bottom-1 -left-2.5">
         <path d="M12 21 C 4 15, 2 10, 6 6 C 9 4, 11 6, 12 8 C 13 6, 15 4, 18 6 C 22 10, 20 15, 12 21 Z" fill="none" stroke="#ff2fb3" stroke-width="1.5"/>
       </svg>
-      <svg viewBox="0 0 24 24" width="28" height="28" class="absolute -top-[6px] left-[30px]">
+      <svg viewBox="0 0 24 24" width="28" height="28" class="absolute -top-1.5 left-[30px]">
         <path d="M12 12 L4 7 L4 17 Z M12 12 L20 7 L20 17 Z" fill="#ff2fb3"/>
         <circle cx="12" cy="12" r="2" fill="#ff2fb3"/>
       </svg>
     </div>
 
     <div class="flex-1 text-center md:text-left w-full">
-      <div class="font-script text-[20px] md:text-[22px] text-hot leading-none mb-1">hi hi !! welcome to</div>
-      <div class="font-display text-[44px] md:text-[80px] text-hot leading-[0.9] tracking-[-2px]">
-        pawbies<span class="font-script text-[26px] md:text-[50px] text-lilac">.net</span>
+      <div class="font-script text-xl md:text-2xl text-hot leading-none mb-1"><%= t(".welcome_to") %></div>
+      <div class="font-display text-5xl md:text-7xl text-hot leading-[0.9] tracking-[-2px]">
+        pawbies<span class="font-script text-4xl md:text-5xl text-lilac">.net</span>
       </div>
-      <div class="font-script text-[20px] md:text-[26px] text-ink mt-1.5 leading-[1.1]">
-        ✿ silly femboy gymbro ^^ ✿
+      <div class="font-script text-3xl text-ink mt-1.5 leading-[1.1]">
+        <%= t(".subtitle") %>
       </div>
-      <div class="text-[14px] mt-2.5 leading-[1.5] max-w-[520px] mx-auto md:mx-0 text-[#2a1535cc]">
-        21 · building tiny software and lifting heavy things. probably reading shoujo right now.
+      <div class="text-md mt-2.5 leading-normal max-w-[520px] mx-auto md:mx-0 text-[#2a1535cc]">
+        19 · <%= t(".about") %>
       </div>
       <div class="flex flex-wrap gap-1.5 mt-3 justify-center md:justify-start">
-        <% [ "he/they", "somewhere cozy · utc+1", "INFP", "trans rights", "vim btw" ].each do |tag| %>
-          <span class="font-script text-[12px] font-semibold rounded-full text-ink bg-[#ff94d466] px-2.5 py-[3px] border-[1.5px] border-dashed border-[#ff2fb388]"><%= tag %></span>
-        <% end %>
+        <span class="font-script text-md font-semibold rounded-full text-ink bg-[#ff94d466] px-2.5 py-[3px] border-[1.5px] border-dashed border-[#ff2fb388]">
+          <%= t(".pronouns") %>
+        </span>
+        <span class="font-script text-md font-semibold rounded-full text-ink bg-[#ff94d466] px-2.5 py-[3px] border-[1.5px] border-dashed border-[#ff2fb388]">
+          🇦🇹
+        </span>
+        <span class="font-script text-md font-semibold rounded-full text-ink bg-[#ff94d466] px-2.5 py-[3px] border-[1.5px] border-dashed border-[#ff2fb388]">
+          <%= t(".sexuality") %> 🏳️‍🌈
+        </span>
       </div>
     </div>
   </div>

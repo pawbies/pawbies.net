@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Pawbies Net" %></title>
+    <title><%= content_for(:title) || "pawbies.net" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Pawbies Net">
@@ -33,9 +33,11 @@
       <span class="font-display text-[22px] text-hot leading-none">pawbies<span class="text-lilac">.net</span></span>
       <span class="flex-1"></span>
       <% %w[about blog projects gym photos guests links].each do |n| %>
-        <a href="#<%= n %>" class="hidden md:inline-block text-paper text-[13px] font-script font-semibold px-2.5 py-1 rounded-full transition hover:bg-hot/30"><%= n %></a>
+        <a href="#<%= n %>" class="hidden md:inline-block text-paper text-md font-script font-semibold px-2.5 py-1 rounded-full transition hover:bg-hot/30"><%= n %></a>
       <% end %>
     </nav>
+
+    <div class="fixed inset-0 pointer-events-none z-0 bg-[linear-gradient(#ff2fb311_1px,transparent_1px),linear-gradient(90deg,#ff2fb311_1px,transparent_1px)] bg-[length:28px_28px]"></div>
 
     <main>
       <%= yield %>

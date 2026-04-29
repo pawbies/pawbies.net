@@ -1,0 +1,10 @@
+en:
+  homepage:
+    gym:
+      gym_log: "gym log ⚡"
+      training_for: "training for"
+      routine: "upper/lower · 4x/week"
+
+      bench: "bench"
+      squat: "squat"
+      deadlift: "deadlift"

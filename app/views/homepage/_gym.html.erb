@@ -1,30 +1,33 @@
 <div id="gym" class="relative">
   <%# tape, hot %>
-  <div class="absolute h-[18px] w-[70px] -rotate-[10deg] shadow-[0_1px_3px_#0003] -top-[8px] left-[30px] bg-[repeating-linear-gradient(90deg,#ff2fb3aa_0_4px,#ff2fb355_4px_8px)]"></div>
+  <div class="absolute h-[18px] w-[70px] -rotate-10 shadow-[0_1px_3px_#0003] -top-2 left-[30px] bg-[repeating-linear-gradient(90deg,#ff2fb3aa_0_4px,#ff2fb355_4px_8px)]"></div>
 
   <div class="relative bg-paper rounded-sm shadow-[0_6px_20px_#0006,0_1px_0_#00000022] p-4 rotate-[1.05deg]">
-    <svg viewBox="0 0 24 24" width="26" height="26" class="absolute -top-[14px] right-[20px] animate-twinkle">
+    <svg viewBox="0 0 24 24" width="26" height="26" class="absolute -top-3.5 right-5 animate-twinkle">
       <path d="M12 3 L14 10 L21 11 L15.5 15.5 L17.5 22 L12 18 L6.5 22 L8.5 15.5 L3 11 L10 10 Z" fill="none" stroke="#ffce6b" stroke-width="1.5" stroke-linejoin="round"/>
     </svg>
 
-    <div class="font-display text-[22px] text-hot mb-2">gym log ⚡</div>
+    <div class="font-display text-[22px] text-hot mb-2"><%= t(".gym_log") %></div>
 
     <div class="flex justify-between mb-2.5 items-baseline">
-      <span class="font-script text-[30px] text-hot leading-none">47 days!!</span>
-      <span class="text-[11px] text-[#2a1535aa]">ppl · 6x/week</span>
+      <div class="flex flex-col justify-start">
+        <span class="font-script text-[18px] text-ink leading-none"><%= t(".training_for") %></span>
+        <span class="font-script text-[24px] text-hot leading-none"><%= distance_of_time_in_words(Date.parse("2023-01-01"), Time.current) %>!!</span>
+      </div>
+      <span class="text-[11px] text-[#2a1535aa]"><%= t(".routine") %></span>
     </div>
 
-    <% lifts = [
-      { name: "bench",    weight: "150 kg" },
-      { name: "squat",    weight: "180 kg" },
-      { name: "deadlift", weight: "205 kg" },
-      { name: "ohp",      weight: "75 kg"  }
-    ] %>
-    <% lifts.each_with_index do |l, i| %>
-      <div class="flex justify-between text-[12px] py-1 <%= 'border-b border-dotted border-[#ff2fb355]' if i < lifts.length - 1 %>">
-        <span class="font-script text-[17px] text-ink"><%= l[:name] %></span>
-        <span class="font-bold text-hot font-mono"><%= l[:weight] %></span>
-      </div>
-    <% end %>
+    <div class="flex justify-between text-[12px] py-1 border-b border-dotted border-[#ff2fb355]">
+      <span class="font-script text-[17px] text-ink"><%= t(".bench") %></span>
+      <span class="font-bold text-hot font-mono">110 kg x 7</span>
+    </div>
+    <div class="flex justify-between text-[12px] py-1 border-b border-dotted border-[#ff2fb355]">
+      <span class="font-script text-[17px] text-ink"><%= t(".squat") %></span>
+      <span class="font-bold text-hot font-mono">140 kg x 3</span>
+    </div>
+    <div class="flex justify-between text-[12px] py-1">
+      <span class="font-script text-[17px] text-ink"><%= t(".deadlift") %></span>
+      <span class="font-bold text-hot font-mono">170 kg x 1</span>
+    </div>
   </div>
 </div>
